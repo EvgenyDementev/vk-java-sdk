@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
 import com.vk.api.sdk.objects.base.BoolInt;
-import java.net.URL;
 import java.util.List;
 import java.util.Objects;
 
@@ -85,7 +84,7 @@ public class GroupSettings implements Validable {
      * URL of the RSS feed
      */
     @SerializedName("rss")
-    private URL rss;
+    private String rss;
 
     /**
      * Community subject ID
@@ -238,11 +237,11 @@ public class GroupSettings implements Validable {
         return this;
     }
 
-    public URL getRss() {
+    public String getRss() {
         return rss;
     }
 
-    public GroupSettings setRss(URL rss) {
+    public GroupSettings setRss(String rss) {
         this.rss = rss;
         return this;
     }

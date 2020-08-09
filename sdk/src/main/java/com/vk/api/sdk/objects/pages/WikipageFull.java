@@ -5,7 +5,6 @@ import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
 import com.vk.api.sdk.objects.annotations.Required;
 import com.vk.api.sdk.objects.base.BoolInt;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -86,7 +85,7 @@ public class WikipageFull implements Validable {
      * URL of the page preview
      */
     @SerializedName("view_url")
-    private URL viewUrl;
+    private String viewUrl;
 
     /**
      * Views number
@@ -204,11 +203,11 @@ public class WikipageFull implements Validable {
         return this;
     }
 
-    public URL getViewUrl() {
+    public String getViewUrl() {
         return viewUrl;
     }
 
-    public WikipageFull setViewUrl(URL viewUrl) {
+    public WikipageFull setViewUrl(String viewUrl) {
         this.viewUrl = viewUrl;
         return this;
     }

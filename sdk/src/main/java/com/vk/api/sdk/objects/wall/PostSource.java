@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.wall;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -29,7 +28,7 @@ public class PostSource implements Validable {
      * URL to an external site used to publish the post
      */
     @SerializedName("url")
-    private URL url;
+    private String url;
 
     public String getData() {
         return data;
@@ -58,11 +57,11 @@ public class PostSource implements Validable {
         return this;
     }
 
-    public URL getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public PostSource setUrl(URL url) {
+    public PostSource setUrl(String url) {
         this.url = url;
         return this;
     }

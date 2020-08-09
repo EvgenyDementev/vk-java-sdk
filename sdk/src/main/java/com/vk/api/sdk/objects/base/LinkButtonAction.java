@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.base;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -17,7 +16,7 @@ public class LinkButtonAction implements Validable {
      * Action URL
      */
     @SerializedName("url")
-    private URL url;
+    private String url;
 
     public LinkButtonActionType getType() {
         return type;
@@ -28,11 +27,11 @@ public class LinkButtonAction implements Validable {
         return this;
     }
 
-    public URL getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public LinkButtonAction setUrl(URL url) {
+    public LinkButtonAction setUrl(String url) {
         this.url = url;
         return this;
     }

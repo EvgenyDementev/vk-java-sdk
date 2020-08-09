@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.account;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -26,7 +25,7 @@ public class Offer implements Validable {
      * URL of the preview image
      */
     @SerializedName("img")
-    private URL img;
+    private String img;
 
     /**
      * Instruction how to process the offer
@@ -82,11 +81,11 @@ public class Offer implements Validable {
         return this;
     }
 
-    public URL getImg() {
+    public String getImg() {
         return img;
     }
 
-    public Offer setImg(URL img) {
+    public Offer setImg(String img) {
         this.img = img;
         return this;
     }

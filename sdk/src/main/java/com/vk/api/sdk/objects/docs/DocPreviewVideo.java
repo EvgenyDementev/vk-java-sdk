@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
 import com.vk.api.sdk.objects.annotations.Required;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -30,7 +29,7 @@ public class DocPreviewVideo implements Validable {
      */
     @SerializedName("src")
     @Required
-    private URL src;
+    private String src;
 
     /**
      * Video's width in pixels
@@ -57,11 +56,11 @@ public class DocPreviewVideo implements Validable {
         return this;
     }
 
-    public URL getSrc() {
+    public String getSrc() {
         return src;
     }
 
-    public DocPreviewVideo setSrc(URL src) {
+    public DocPreviewVideo setSrc(String src) {
         this.src = src;
         return this;
     }

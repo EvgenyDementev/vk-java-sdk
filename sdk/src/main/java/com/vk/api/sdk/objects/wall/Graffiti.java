@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.wall;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -26,13 +25,13 @@ public class Graffiti implements Validable {
      * URL of the preview image with 200 px in width
      */
     @SerializedName("photo_200")
-    private URL photo200;
+    private String photo200;
 
     /**
      * URL of the preview image with 586 px in width
      */
     @SerializedName("photo_586")
-    private URL photo586;
+    private String photo586;
 
     public Integer getId() {
         return id;
@@ -52,20 +51,20 @@ public class Graffiti implements Validable {
         return this;
     }
 
-    public URL getPhoto200() {
+    public String getPhoto200() {
         return photo200;
     }
 
-    public Graffiti setPhoto200(URL photo200) {
+    public Graffiti setPhoto200(String photo200) {
         this.photo200 = photo200;
         return this;
     }
 
-    public URL getPhoto586() {
+    public String getPhoto586() {
         return photo586;
     }
 
-    public Graffiti setPhoto586(URL photo586) {
+    public Graffiti setPhoto586(String photo586) {
         this.photo586 = photo586;
         return this;
     }

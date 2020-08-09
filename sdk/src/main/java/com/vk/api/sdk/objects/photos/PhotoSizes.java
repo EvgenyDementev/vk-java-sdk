@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
 import com.vk.api.sdk.objects.annotations.Required;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -23,7 +22,7 @@ public class PhotoSizes implements Validable {
      */
     @SerializedName("url")
     @Required
-    private URL url;
+    private String url;
 
     @SerializedName("type")
     @Required
@@ -45,11 +44,11 @@ public class PhotoSizes implements Validable {
         return this;
     }
 
-    public URL getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public PhotoSizes setUrl(URL url) {
+    public PhotoSizes setUrl(String url) {
         this.url = url;
         return this;
     }

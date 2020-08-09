@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.utils;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -26,13 +25,13 @@ public class ShortLink implements Validable {
      * Short link URL
      */
     @SerializedName("short_url")
-    private URL shortUrl;
+    private String shortUrl;
 
     /**
      * Full URL
      */
     @SerializedName("url")
-    private URL url;
+    private String url;
 
     public String getAccessKey() {
         return accessKey;
@@ -52,20 +51,20 @@ public class ShortLink implements Validable {
         return this;
     }
 
-    public URL getShortUrl() {
+    public String getShortUrl() {
         return shortUrl;
     }
 
-    public ShortLink setShortUrl(URL shortUrl) {
+    public ShortLink setShortUrl(String shortUrl) {
         this.shortUrl = shortUrl;
         return this;
     }
 
-    public URL getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public ShortLink setUrl(URL url) {
+    public ShortLink setUrl(String url) {
         this.url = url;
         return this;
     }

@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.base;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -14,13 +13,13 @@ public class UploadServer implements Validable {
      * Upload URL
      */
     @SerializedName("upload_url")
-    private URL uploadUrl;
+    private String uploadUrl;
 
-    public URL getUploadUrl() {
+    public String getUploadUrl() {
         return uploadUrl;
     }
 
-    public UploadServer setUploadUrl(URL uploadUrl) {
+    public UploadServer setUploadUrl(String uploadUrl) {
         this.uploadUrl = uploadUrl;
         return this;
     }

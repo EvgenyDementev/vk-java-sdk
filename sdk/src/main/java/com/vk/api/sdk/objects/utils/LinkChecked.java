@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.utils;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -14,16 +13,16 @@ public class LinkChecked implements Validable {
      * Link URL
      */
     @SerializedName("link")
-    private URL link;
+    private String link;
 
     @SerializedName("status")
     private LinkCheckedStatus status;
 
-    public URL getLink() {
+    public String getLink() {
         return link;
     }
 
-    public LinkChecked setLink(URL link) {
+    public LinkChecked setLink(String link) {
         this.link = link;
         return this;
     }

@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
 import com.vk.api.sdk.objects.annotations.Required;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -72,7 +71,7 @@ public class MarketItem implements Validable {
      * URL of the preview image
      */
     @SerializedName("thumb_photo")
-    private URL thumbPhoto;
+    private String thumbPhoto;
 
     /**
      * Item title
@@ -85,7 +84,7 @@ public class MarketItem implements Validable {
      * URL to item
      */
     @SerializedName("url")
-    private URL url;
+    private String url;
 
     public String getAccessKey() {
         return accessKey;
@@ -186,11 +185,11 @@ public class MarketItem implements Validable {
         return this;
     }
 
-    public URL getThumbPhoto() {
+    public String getThumbPhoto() {
         return thumbPhoto;
     }
 
-    public MarketItem setThumbPhoto(URL thumbPhoto) {
+    public MarketItem setThumbPhoto(String thumbPhoto) {
         this.thumbPhoto = thumbPhoto;
         return this;
     }
@@ -204,11 +203,11 @@ public class MarketItem implements Validable {
         return this;
     }
 
-    public URL getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public MarketItem setUrl(URL url) {
+    public MarketItem setUrl(String url) {
         this.url = url;
         return this;
     }

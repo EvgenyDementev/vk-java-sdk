@@ -3,7 +3,6 @@ package com.vk.api.sdk.objects.video;
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 import com.vk.api.sdk.objects.Validable;
-import java.net.URL;
 import java.util.Objects;
 
 /**
@@ -38,7 +37,7 @@ public class SaveResult implements Validable {
      * URL for the video uploading
      */
     @SerializedName("upload_url")
-    private URL uploadUrl;
+    private String uploadUrl;
 
     /**
      * Video ID
@@ -82,11 +81,11 @@ public class SaveResult implements Validable {
         return this;
     }
 
-    public URL getUploadUrl() {
+    public String getUploadUrl() {
         return uploadUrl;
     }
 
-    public SaveResult setUploadUrl(URL uploadUrl) {
+    public SaveResult setUploadUrl(String uploadUrl) {
         this.uploadUrl = uploadUrl;
         return this;
     }
